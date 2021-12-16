@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/predict_page.css">
+    <title>Prediction</title>
+</head>
+<body>
+    <h1>Enter all the details</h1>
+    <form method="post" >
+    <input type="text" name="cylinder" placeholder="  Cylinders in the car", required>
+    <br>
+    <input type="text" name="disp" placeholder="  Disaplacement in the car", required>
+    <br>
+    <input type="text" name="hp" placeholder="  Horsepower in the car", required>
+    <br>
+    <input type="text" name="weight" placeholder="  Weight in the car", required>
+    <br>
+    <input type="text" name="acc" placeholder="  Accelaration in the car", required>
+    <br>
+    <input type="text" name="year" placeholder="  Model Year of the car (YY)", required>
+    <br>
+    
+        <label for="">Origin Country</label>  
+    <select name="origin">
+        <option value="1">America</option>
+        <option value="2">Europe</option>
+        <option value="3">Asia</option>
+    </select>
+    <BR>        
+    <button>
+        <input type="submit">
+        <label >The Milage of the car is approx {{Milage}} Km/liter</label>
+    </button>
+    </form>
+    
+</body>
+</html>
