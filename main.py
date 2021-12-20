@@ -1,4 +1,4 @@
-from flask import Flask,url_for, redirect ,render_template,request
+from flask import Flask,render_template,request
 import pickle
 
 app=Flask(__name__)
@@ -7,7 +7,7 @@ sc = pickle.load(open('./static/scaler.pkl','rb'))
 result=None
 
 @app.route('/')
-def home(): 
+def home():
     return render_template('home.html')
 
 @app.route('/predict',methods=['GET','POST'])
@@ -18,7 +18,7 @@ def predict():
      return render_template('predict_page.html',Milage=(result*0.425143707))
     return render_template('predict_page.html')
 
-    
+
 
 if __name__=="__main__":
     app.run(debug=True)
