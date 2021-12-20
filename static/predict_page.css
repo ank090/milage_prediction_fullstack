@@ -58,7 +58,8 @@ select{
     color: #316B83;
 }
 
-input[type="submit"]{
+#submit_btn{
+    
     margin-left: 90px;
     border-top: none;
     border-left: none;

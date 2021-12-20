@@ -1,8 +1,5 @@
 from flask import Flask,url_for, redirect ,render_template,request
 import pickle
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.preprocessing import StandardScaler
-
 
 app=Flask(__name__)
 reg = pickle.load(open('./static/regressor.pkl','rb'))
